@@ -308,7 +308,7 @@ corresponds to the same point in time across the transition. Do this using a
 function redraw() {
 
   var rect = chart.selectAll("rect")
-      .data(data, function(d) { return d.time; });
+      .data(data, function(d) { return d.time; }); // the "data join" part
 
   // Enter…
   rect.enter().insert("rect", "line")
